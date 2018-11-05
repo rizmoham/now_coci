@@ -1,0 +1,464 @@
+groups: []
+resources:
+- name: slack-alert
+  type: slack-notification
+  source:
+    url: https://hooks.slack.com/services/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
+- name: vrcms-dev-ui-source
+  type: git
+  source:
+    branch: new-infra-develop-1
+    disable_ci_skip: true
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      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
+      -----END RSA PRIVATE KEY-----
+    uri: git@github.com:Techolution/VRCMS-UI.git
+- name: gateway-docker-image
+  type: docker-image
+  source:
+    aws_access_key_id: AKIAIZI73F5DMJQESFPQ
+    aws_secret_access_key: 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
+    repository: 402494143593.dkr.ecr.us-east-2.amazonaws.com/vrcms-gateway-dev
+- name: vrcms-ui-docker-image
+  type: docker-image
+  source:
+    aws_access_key_id: AKIAIZI73F5DMJQESFPQ
+    aws_secret_access_key: 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
+    repository: 402494143593.dkr.ecr.us-east-2.amazonaws.com/vrcms-ui-dev
+    tag: latest
+- name: ansible-repo
+  type: git
+  source:
+    branch: master
+    disable_ci_skip: true
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      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
+      -----END RSA PRIVATE KEY-----
+    uri: git@github.com:Techolution/ansible-deploy.git
+- name: vrcms-dev-gateway-source
+  type: git
+  source:
+    branch: new-infra-develop
+    disable_ci_skip: true
+    paths:
+    - gateway/*
+    - domains/*
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      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
+      -----END RSA PRIVATE KEY-----
+    uri: git@github.com:Techolution/VRCMS.git
+
+- name: send-an-email
+  type: email
+  source:
+    from: no-reply@techolution.com
+    smtp:
+      host: smtp.gmail.com
+      password: Techolution
+      port: "587"
+      username: no-reply@techolution.com
+    to:
+    - srushti.patare@techolution.com
+    - hari.ummadi@techolution.com
+resource_types:
+- name: email
+  type: docker-image
+  source:
+    repository: pcfseceng/email-resource
+    tag: latest
+- name: slack-notification
+  type: docker-image
+  source:
+    repository: cfcommunity/slack-notification-resource
+    tag: latest
+jobs:
+- name: build-dev-ui-vrcms
+  public: true
+  serial: true
+  plan:
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#FFFF00'
+        text: VRCMS-UI-DEV Job started, Please wait
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+  - get: vrcms-dev-ui-source
+    trigger: true
+  - task: package
+    privileged: true
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          aws_access_key_id: AKIAIZI73F5DMJQESFPQ
+          aws_secret_access_key: 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
+          repository: 402494143593.dkr.ecr.us-east-2.amazonaws.com/build-n-deploy
+          tag: latest
+      run:
+        path: /bin/bash
+        args:
+        - -exc
+        - |
+          cp vrcms-dev-ui-source/Dockerfile ui-target
+          cd vrcms-dev-ui-source
+          git rev-parse --short HEAD > ../ui-target/tag
+      inputs:
+      - name: vrcms-dev-ui-source
+        path: ""
+      outputs:
+      - name: ui-target
+        path: ""
+  - put: vrcms-ui-docker-image
+    params:
+      build: vrcms-dev-ui-source
+      tag: ui-target/tag
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#36a64f'
+        text: VRCMS-UI-DEV Job Completed Successfully
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+
+- name: dev-deploy-ui
+  plan:
+  - put: send-an-email
+    params:
+      body_text: ' Deploy Started VRCMS-UI-Deploy Job '
+      subject_text: 'Deploy Started: DEV-VRCMS-UI'
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#FFFF00'
+        text: vrcms dev ui Deployment Job started, Please wait
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+  - get: ansible-repo
+  - get: vrcms-dev-ui-source
+    passed:
+    - build-dev-ui-vrcms
+  - task: deployment
+    privileged: true
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          aws_access_key_id: AKIAIZI73F5DMJQESFPQ
+          aws_secret_access_key: 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
+          repository: 402494143593.dkr.ecr.us-east-2.amazonaws.com/aws-cli
+          tag: latest
+      run:
+        path: /bin/bash
+        args:
+        - -exc
+        - "output_dir=workspace\ncd vrcms-dev-ui-source && commit_id=$(git rev-parse
+          --short HEAD)\ncd ../ansible-repo/vrcms-task-definition/dev\necho $commit_id\nsed
+          -i -e \"s/latest/${commit_id}/g\" dev-vrcms-ui-task.json \ncat dev-vrcms-ui-task.json
+          \naws ecs register-task-definition --cli-input-json file://dev-vrcms-ui-task.json
+          --region us-east-2\naws ecs update-service --cluster vrcms --service dev-vrcms-ui
+          --task-definition dev-vrcms-ui-task --region us-east-2\n"
+      inputs:
+      - name: ansible-repo
+        path: ""
+      - name: vrcms-dev-ui-source
+        path: ""
+      outputs:
+      - name: workspace
+        path: ""
+    on_failure:
+      put: slack-alert
+      params:
+        attachments:
+        - color: '#FF0000'
+          text: vrcms dev ui Deployment Job Failed, Please verify
+        channel: '#vrcms-builds'
+        icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+  - put: send-an-email
+    params:
+      body_text: ' Deploy Completed VRCMS-UI-Deploy Job '
+      subject_text: 'Deploy Completed: DEV-VRCMS-UI'
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#36a64f'
+        text: vrcms dev ui Deployment Job Completed Successfully
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+
+- name: build-dev-vrcms-gateway
+  public: true
+  serial: true
+  plan:
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#FFFF00'
+        text: vrcms-dev-build-gateway Job started, Please wait
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.pngeval
+  - get: vrcms-dev-gateway-source
+    trigger: true
+  - task: package
+    privileged: true
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          aws_access_key_id: AKIAIZI73F5DMJQESFPQ
+          aws_secret_access_key: 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
+          repository: 402494143593.dkr.ecr.us-east-2.amazonaws.com/build-n-deploy
+          tag: latest
+      run:
+        path: /bin/bash
+        args:
+        - -exc
+        - |
+          mvn -f vrcms-dev-gateway-source/build/pom.xml install
+          mvn -f vrcms-dev-user-source/build/pom.xml sonar:sonar
+          cp -r vrcms-dev-gateway-source/gateway/target/ gateway-target/target/
+          cp vrcms-dev-gateway-source/gateway/Dockerfile gateway-target
+          cd vrcms-dev-gateway-source
+          git rev-parse --short HEAD > ../gateway-target/tag
+      inputs:
+      - name: vrcms-dev-gateway-source
+        path: ""
+      outputs:
+      - name: gateway-target
+        path: ""
+    on_failure:
+      put: slack-alert
+      params:
+        attachments:
+        - color: '#FF0000'
+          text: vrcms-dev-build-gateway Job Failed, Please verify
+        channel: '#vrcms-builds'
+        icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+  - put: gateway-docker-image
+    params:
+      build: gateway-target
+      tag: gateway-target/tag
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#36a64f'
+        text: vrcms-dev-build-gateway Job Completed Successfully
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+
+- name: dev-deploy-gateway
+  plan:
+  - put: send-an-email
+    params:
+      body_text: ' Deployment Started VRCMS-GATEWAY Job '
+      subject_text: 'Deployment Started: DEV-VRCMS-GATEWAY'
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#FFFF00'
+        text: vrcms dev gateway Deployment Job started, Please wait
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+  - get: ansible-repo
+  - get: vrcms-dev-gateway-source
+    passed:
+    - build-dev-vrcms-gateway
+  - task: deployment
+    privileged: true
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          aws_access_key_id: AKIAIZI73F5DMJQESFPQ
+          aws_secret_access_key: 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
+          repository: 402494143593.dkr.ecr.us-east-2.amazonaws.com/aws-cli
+          tag: latest
+      run:
+        path: /bin/bash
+        args:
+        - -exc
+        - "output_dir=workspace\ncd vrcms-dev-gateway-source && commit_id=$(git rev-parse
+          --short HEAD)\ncd ../ansible-repo/vrcms-task-definition/dev\necho $commit_id\nsed
+          -i -e \"s/latest/${commit_id}/g\" dev-vrcms-gateway-task.json \ncat dev-vrcms-gateway-task.json
+          \naws ecs register-task-definition --cli-input-json file://dev-vrcms-gateway-task.json
+          --region us-east-2\naws ecs update-service --cluster vrcms --service dev-vrcms-gateway
+          --task-definition dev-vrcms-gateway-task --region us-east-2\n"
+      inputs:
+      - name: ansible-repo
+        path: ""
+      - name: vrcms-dev-gateway-source
+        path: ""
+      outputs:
+      - name: workspace
+        path: ""
+    on_failure:
+      put: slack-alert
+      params:
+        attachments:
+        - color: '#FF0000'
+          text: vrcms gateway Deployment Job Failed, Please verify
+        channel: '#vrcms-builds'
+        icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+  - put: send-an-email
+    params:
+      body_text: ' Deployment Completed VRCMS-GATEWAY Job '
+      subject_text: 'Deployment Completed: DEV-VRCMS-GATEWAY'
+  - put: slack-alert
+    params:
+      attachments:
+      - color: '#36a64f'
+        text: vrcms gateway Deployment Job Completed Successfully
+      channel: '#vrcms-builds'
+      icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
+
